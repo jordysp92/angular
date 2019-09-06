@@ -1,0 +1,17 @@
+<!--
+    <p [ngStyle]="{'font-size': '15px'}">
+        ESto es un ejemplo con ng-style
+    </p>
+
+-->
+<p [style.fontSize.px]="tamanio">
+  ESto es un ejemplo con ng-style
+</p>
+
+<button class="btn btn-primary" (click)="tamanio = tamanio + 5">
+  <i class="fa fa-plus"></i>
+</button>
+
+<button class="btn btn-primary" (click)="tamanio = tamanio - 5">
+  <i class="fa fa-minus"></i>
+</button>
