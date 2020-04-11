@@ -47,3 +47,4 @@ HELP.md
 *.sln
 
 curso-01/**/node_modules/
+curso-02-avanzado/**/node_modules/
