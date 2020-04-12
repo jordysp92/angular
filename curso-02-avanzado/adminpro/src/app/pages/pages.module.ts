@@ -14,6 +14,7 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 import { PAGES_ROUTES } from './pages.routes';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficoComponent } from '../components/grafico/grafico.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { GraficoComponent } from '../components/grafico/grafico.component';
         ProgressComponent,
         Graficas1Component,
         IncrementadorComponent,
-        GraficoComponent
+        GraficoComponent,
+        AccountSettingsComponent
     ],
     exports:
     [
