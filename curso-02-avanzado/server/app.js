@@ -2,9 +2,20 @@
 var express = require('express');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
+var cors = require('cors')
+
 
 //inicializar variables
 var app = express();
+
+// Configurar cabeceras y cors
+
+var corsOptions = {
+    origin: 'http://localhost:4200',
+    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+  }
+app.use(cors(corsOptions))
+
 
 //bodyparser
 // parse application/x-www-form-urlencoded

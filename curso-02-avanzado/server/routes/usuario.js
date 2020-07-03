@@ -97,7 +97,7 @@ app.put('/:id', mdAuth.verificaToken, (req, res) => {
 })
 
 //Crear nuevo usuario
-app.post('/', mdAuth.verificaToken, (req, res) => {
+app.post('/', (req, res) => {
 
     var body = req.body;
 

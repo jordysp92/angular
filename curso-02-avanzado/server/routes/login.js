@@ -135,7 +135,7 @@ app.post('/', (req, res) => {
         if (!usuarioDB) {
             return res.status(HttpStatus.BAD_REQUEST).json({
                 ok: false,
-                mensaje: 'Credenciales incorrectas -email',
+                mensaje: 'Credenciales incorrectas - email',
                 errors: err
             })
 
@@ -144,7 +144,7 @@ app.post('/', (req, res) => {
         if (!bcrypt.compareSync(body.password, usuarioDB.password)) {
             return res.status(HttpStatus.BAD_REQUEST).json({
                 ok: false,
-                mensaje: 'Credenciales incorrectas -password',
+                mensaje: 'Credenciales incorrectas - password',
                 errors: err
             })
 
