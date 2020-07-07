@@ -86,7 +86,7 @@ app.put('/:id', mdAuth.verificaToken, (req, res) => {
 
             return res.status(HttpStatus.OK).json({
                 ok: true,
-                usuarioGuardado
+                usuario: usuarioGuardado
             })
         })
 
