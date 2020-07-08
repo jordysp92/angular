@@ -33,7 +33,6 @@ export class BreadcrumbsComponent implements OnInit {
   ngOnInit(): void {
   }
   getDataRoute(){
-    console.log("this.router.events: ", this.router.events);
 
     return this.router.events.pipe(
       filter( evento => evento instanceof ActivationEnd ),
